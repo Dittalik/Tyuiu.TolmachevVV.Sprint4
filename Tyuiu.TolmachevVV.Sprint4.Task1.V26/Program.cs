@@ -15,8 +15,8 @@ namespace Tyuiu.TolmachevVV.Sprint4.Task1.V26
             Console.Title = "Спринт #4 | Выполнил: Толмачев. В. В. | ПКТб-23-1";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("*Спринт #4                                                                *");
-            Console.WriteLine("*Задание #0                                                               *");
-            Console.WriteLine("*Вариант #14                                                              *");
+            Console.WriteLine("*Задание #1                                                               *");
+            Console.WriteLine("*Вариант #26                                                              *");
             Console.WriteLine("*Выполнил: Толмачев Виталий Владимирович | ПКТб 23-1                      *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");

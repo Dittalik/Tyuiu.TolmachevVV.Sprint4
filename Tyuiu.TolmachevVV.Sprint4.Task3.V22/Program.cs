@@ -3,38 +3,37 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Tyuiu.TolmachevVV.Sprint4.Task2.V2.Lib;
+using Tyuiu.TolmachevVV.Sprint4.Task3.V22.Lib;
 
-namespace Tyuiu.TolmachevVV.Sprint4.Task2.V2
+namespace Tyuiu.TolmachevVV.Sprint4.Task3.V22
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Random rng = new Random();
             DataService service1 = new DataService();
             Console.Title = "Спринт #4 | Выполнил: Толмачев. В. В. | ПКТб-23-1";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("*Спринт #4                                                                *");
-            Console.WriteLine("*Задание #2                                                               *");
-            Console.WriteLine("*Вариант #2                                                               *");
+            Console.WriteLine("*Задание #3                                                               *");
+            Console.WriteLine("*Вариант #22                                                              *");
             Console.WriteLine("*Выполнил: Толмачев Виталий Владимирович | ПКТб 23-1                      *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine("Задайте количество элементов массива");
-            int[] array = new int[Convert.ToInt32(Console.ReadLine())];
-            Console.WriteLine("Массив:                                                                   *");
-            for (int i = 0; i < array.Length; i++)
-            {
-                array[i] = rng.Next(1, 8);
-            }
-            array.ToList().ForEach(i => Console.Write(i.ToString() + "\t"));
-            Console.WriteLine();
+            Console.WriteLine("{ 4, 4, 7, 8, 9 }                                                         *");
+            Console.WriteLine("{ 9, 5, 9, 7, 8 }                                                         *");
+            Console.WriteLine("{ 7, 4, 9, 4, 6 }                                                         *");
+            Console.WriteLine("{ 4, 4, 7, 4, 4 }                                                         *");
+            Console.WriteLine("{ 4, 5, 8, 6, 7 }                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine(service1.Calculate(array));
+            Console.WriteLine(service1.Calculate(new int[,] { { 4, 4, 7, 8, 9 },
+                                                              { 9, 5, 9, 7, 8 },
+                                                              { 7, 4, 9, 4, 6 },
+                                                              { 4, 4, 7, 4, 4 },
+                                                              { 4, 5, 8, 6, 7 } }));
             Console.WriteLine("***************************************************************************");
             Console.ReadKey();
         }
