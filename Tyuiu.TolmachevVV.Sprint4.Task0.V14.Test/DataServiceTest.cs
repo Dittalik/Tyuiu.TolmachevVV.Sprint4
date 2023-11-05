@@ -11,7 +11,7 @@ namespace Tyuiu.TolmachevVV.Sprint4.Task0.V14.Test
         public void SumCheck()
         {
             DataService service1 = new DataService();
-            Assert.AreEqual(22, service1.GetSumOddArrEl(new int[] { 8, 9, 5, 4, 3, 2, 1, 0, 5, 7 }));
+            Assert.AreEqual(30, service1.GetSumOddArrEl(new int[] { 8, 9, 5, 4, 3, 2, 1, 0, 5, 7 }));
         }
     }
 }

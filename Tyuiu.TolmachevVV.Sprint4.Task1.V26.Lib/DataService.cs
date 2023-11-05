@@ -5,11 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using tyuiu.cources.programming.interfaces.Sprint4;
 
-namespace Tyuiu.TolmachevVV.Sprint4.Task0.V14.Lib
+namespace Tyuiu.TolmachevVV.Sprint4.Task1.V26.Lib
 {
-    public class DataService : ISprint4Task0V14
+    public class DataService : ISprint4Task1V26
     {
-        public int GetSumOddArrEl(int[] array)
+        public int Calculate(int[] array)
         {
             int sum = 0;
             for (int i = 0; i < array.Length; i++)
